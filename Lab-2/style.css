@@ -1,0 +1,59 @@
+/* Стилі для основи калькулятора */
+#distanceForm {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #363636;
+  color: white;
+}
+
+/* Обмеження розміру калькулятора */
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Стилізація контейнера із резульататми обрахунків */
+.result-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+}
+
+/* Зміна стилів для елементів вводу */
+input,
+select {
+  background-color: #505050 !important;
+  border: none !important;
+  color: white !important;
+}
+
+/* Стилізація кодового елементу, що репрезентує результат обчислень */
+code {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: white;
+  color: grey;
+}
+
+/* Прибрати кодовий елемент, якщо пустий */
+code:empty {
+  display: none;
+}
+
+/* Стилізація кнопки обрахунку */
+button[type="submit"] {
+  background-color: #6f8396;
+  border: none;
+}
+
+/* Стилізація кнопки обрахунку при наведенні курсору */
+button[type="submit"]:hover {
+  background-color: #849aaf;
+}
+
+/* Стилізація кнопки обрахунку при натисканні */
+button[type="submit"]:active {
+  background-color: #54616d !important;
+  border: none;
+}
