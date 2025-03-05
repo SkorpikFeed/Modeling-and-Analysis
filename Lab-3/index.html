@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h1>Калькулятор</h1>
+          <h1 class="h3">Норм, відстані та кута між векторами</h1>
+          <div class="text-end">
+            <small>Made by Taras Marchenko</small>
+          </div>
+        </div>
+
+        <!-- Форма для введення розмірності та векторів -->
+        <form id="vectorForm">
+          <label for="dimension" class="form-label"
+            >Введіть розмірність вектора (n):</label
+          >
+          <input
+            type="number"
+            id="dimension"
+            class="form-control"
+            min="1"
+            max="9"
+            required
+          />
+          <button
+            type="button"
+            class="btn btn-primary w-100 my-3"
+            onclick="generateInputs()"
+          >
+            Застосувати
+          </button>
+
+          <!-- Контейнер для введення координат векторів -->
+          <div class="vector-container" id="vectorInputs"></div>
+
+          <!-- Кнопка для обчислення відстані з використанимим класами Bootstrap-->
+          <button type="submit" class="btn btn-primary w-100 my-3">
+            Обрахувати
+          </button>
+
+          <!-- Контейнер для виведення результатів -->
+          <div class="result-container">
+            <p>Відстань між векторами:</p>
+            <div>
+              <code id="distance"></code>
+            </div>
+            <p>Норма першого вектора:</p>
+            <div>
+              <code id="v1"></code>
+            </div>
+            <p>Норма другого вектора:</p>
+            <div>
+              <code id="v2"></code>
+            </div>
+            <p>Кут між векторами:</p>
+            <div>
+              <code id="angle"></code>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

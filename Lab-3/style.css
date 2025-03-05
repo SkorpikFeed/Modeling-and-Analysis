@@ -1,0 +1,63 @@
+/* Стилі для основи калькулятора */
+#vectorForm {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #363636;
+  color: white;
+}
+
+/* Обмеження розміру калькулятора */
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Стилізація контейнера із резульататми обрахунків */
+.result-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 15px;
+}
+
+/* Зміна стилів для елементів вводу */
+input,
+select {
+  background-color: #505050 !important;
+  border: none !important;
+  color: white !important;
+}
+
+/* Стилізація кодового елементу, що репрезентує результат обчислень */
+code {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: white;
+  color: grey;
+}
+
+/* Прибрати кодовий елемент, якщо пустий */
+code:empty {
+  display: none;
+}
+
+/* Стилізація кнопки обрахунку */
+button {
+  background-color: #6f8396 !important;
+  border: none !important;
+}
+
+/* Стилізація кнопки обрахунку при наведенні курсору */
+button:hover {
+  background-color: #849aaf !important;
+}
+
+/* Стилізація кнопки обрахунку при натисканні */
+button:active {
+  background-color: #54616d !important;
+  border: none;
+}
+
+#vectorInputs {
+  gap: 100px;
+}
